@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/recyclerPalsFragment">
+    <fragment
+        android:id="@+id/recyclerPalsFragment"
+        android:name="com.example.palpedia.RecyclerPalsFragment"
+        android:label="fragment_recycler_pals"
+        tools:layout="@layout/fragment_recycler_pals" >
+        <action
+            android:id="@+id/action_recyclerPalsFragment_to_nuevoPalFragment"
+            app:destination="@id/nuevoPalFragment" />
+        <action
+            android:id="@+id/action_recyclerPalsFragment_to_mostrarPalFragment"
+            app:destination="@id/mostrarPalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nuevoPalFragment"
+        android:name="com.example.palpedia.NuevoPalFragment"
+        android:label="fragment_nuevo_pal"
+        tools:layout="@layout/fragment_nuevo_pal" />
+    <fragment
+        android:id="@+id/mostrarPalFragment"
+        android:name="com.example.palpedia.MostrarPalFragment"
+        android:label="fragment_mostrar_pal"
+        tools:layout="@layout/fragment_mostrar_pal" />
+    <fragment
+        android:id="@+id/mapaFragment"
+        android:name="com.example.palpedia.MapaFragment"
+        android:label="fragment_mapa"
+        tools:layout="@layout/fragment_mapa" />
+</navigation>
